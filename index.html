@@ -50,7 +50,7 @@
     <script id="hexo-configurations">
     let REDEFINE = window.REDEFINE || {};
     REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"languageL zh-CN","path":"search.xml"};
-    REDEFINE.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":false},"style":{"primary_color":"#005080","avatar":"/images/myhead1.png","favicon":"/images/redefine-logo.svg","og_image":{"enable":false,"image_url":null},"article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"/images/firstbackground.png","dark":"/images/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"font_sizes":{"title":"3.0rem","subtitle":"1.5rem"},"line_height":1.2,"title":"Welcome to KratPwt's Blog","subtitle":{"enable":true,"list":["Hello","Stranger","Have a great Day :)"]},"custom_font":{"enable":true,"font_family":null,"font_url":"https://fonts.googleapis.com/css2?family=Roboto&display=swap"}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}},"custom":null,"font":{"chinese":{"enable":true,"font_family":null,"font_url":null},"english":{"enable":false,"font_family":null,"font_url":null}}},"local_search":{"enable":true,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":false},"version":"1.2.1","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":true,"audio":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg"},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]},"mermaid":{"enable":false,"version":"9.3.0"},"search":{"path":"search.json","filed":"post","content":true,"format":"striptags"}}};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/myhead1.png","favicon":"/images/redefine-logo.svg","og_image":{"enable":false,"image_url":null},"article_img_align":"center","right_side_width":"210px","content_max_width":"1200px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"/images/firstbackground.png","dark":"/images/wallhaven-wqery6-dark.webp"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"font_sizes":{"title":"3.0rem","subtitle":"1.5rem"},"line_height":1.2,"title":"Welcome to KratPwt's Blog","subtitle":{"enable":true,"list":["Hello","Stranger","Have a great Day :)"]},"custom_font":{"enable":true,"font_family":null,"font_url":"https://fonts.googleapis.com/css2?family=Roboto&display=swap"}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}},"custom":null,"font":{"chinese":{"enable":true,"font_family":null,"font_url":null},"english":{"enable":false,"font_family":null,"font_url":null}}},"local_search":{"enable":true,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":false},"version":"1.2.1","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":true,"audio":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg"},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Just_Like_This.png"}]},"mermaid":{"enable":false,"version":"9.3.0"},"search":{"path":"search.json","filed":"post","content":true,"format":"striptags"}}};
     REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
     
@@ -226,11 +226,27 @@
                         
                             <li class="menu-item">
                                 <!-- Menu -->
+                                <a class="" 
+                                    href="/tags"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-tags"></i>
+                                        
+                                        TAGS
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
                                 <a class="has-dropdown" 
                                     href="#" onClick="return false;">
                                     
                                         
-                                            <i class="fa-regular fa-face-awsome"></i>
+                                            <i class="fa-regular fa-list"></i>
                                         
                                         LIST &amp; LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
                                     
@@ -240,16 +256,27 @@
                                     <ul class="sub-menu">
                                     
                                         <li>
-                                        <a href="/Aboutme">ABOUTME
-                                        </a>
-                                        </li>
-                                    
-                                        <li>
-                                        <a href="/Com">CHATGPT
+                                        <a href="/%5Bobject%20Object%5D">CATEGORIES
                                         </a>
                                         </li>
                                     
                                     </ul>
+                                
+                            </li>
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/shuoshuo"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-comments"></i>
+                                        
+                                        COMMENT
+                                    
+                                </a>
+                                <!-- Submenu -->
                                 
                             </li>
                     
@@ -323,11 +350,26 @@
             
                 
                     <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/tags"  >
+                             
+                                
+                                    <i class="fa-regular fa-tags"></i>
+                                
+                                TAGS
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
                         <a class="has-dropdown" 
                         href="#" onClick="return false;">
                             
                                 
-                                    <i class="fa-regular fa-face-awsome"></i>
+                                    <i class="fa-regular fa-list"></i>
                                 
                                 LIST &amp; LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
                             
@@ -337,13 +379,24 @@
                               
                         
                             <li class="dropdown-item flex-center">
-                                <a class="dropdown-item" href="/Aboutme">ABOUTME</a>
+                                <a class="dropdown-item" href="/%5Bobject%20Object%5D">CATEGORIES</a>
                             </li>
                         
-                            <li class="dropdown-item flex-center">
-                                <a class="dropdown-item" href="/Com">CHATGPT</a>
-                            </li>
-                        
+                    
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/shuoshuo"  >
+                             
+                                
+                                    <i class="fa-regular fa-comments"></i>
+                                
+                                COMMENT
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
                     
             
 
@@ -364,6 +417,185 @@
                 
                     <div class="home-content-container fade-in-down-animation">
     <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+                    <i class="fa-solid fa-thumbtack fa-thumbtack top-icon"></i>
+                
+
+                
+                    <div class="home-article-thumbnail">
+                        <a href="/post/markdown1.html">
+                            <img src="https://pic2.zhimg.com/v2-cd4d4af7717988bfe4edb0db8666ef9d_250x0.jpg?source=172ae18b" alt="Markdown基础语法教程-1" />
+                        </a>
+                    </div>
+                
+
+                <h3 class="home-article-title">
+                    <a href="/post/markdown1.html">
+                        Markdown基础语法教程-1
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Markdown 教程
+Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。
+Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。
+Markdown 编写的文档可以导出 HTML 、...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Mar 27 2023 14:22:54 GMT+0800">
+                
+                    2023-03-27
+                
+            </span>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Markdown/">Markdown</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/post/markdown1.html">Read more<span class="seo-reader-text">Markdown基础语法教程-1</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+                    <i class="fa-solid fa-thumbtack fa-thumbtack top-icon"></i>
+                
+
+                
+                    <div class="home-article-thumbnail">
+                        <a href="/post/markdown2.html">
+                            <img src="https://pic2.zhimg.com/v2-cd4d4af7717988bfe4edb0db8666ef9d_250x0.jpg?source=172ae18b" alt="Markdown基础语法教程-2" />
+                        </a>
+                    </div>
+                
+
+                <h3 class="home-article-title">
+                    <a href="/post/markdown2.html">
+                        Markdown基础语法教程-2
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Markdown 区块Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：
+&gt; 区块引用
+&gt; 菜鸟教程
+&gt; 学的不仅是技术更是梦想
+
+显示结果如下：
+
+另外区块是可以嵌套的，一个 &gt; 符号是...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Mar 27 2023 15:42:41 GMT+0800">
+                
+                    2023-03-27
+                
+            </span>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Markdown/">Markdown</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/post/markdown2.html">Read more<span class="seo-reader-text">Markdown基础语法教程-2</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+                    <i class="fa-solid fa-thumbtack fa-thumbtack top-icon"></i>
+                
+
+                
+                    <div class="home-article-thumbnail">
+                        <a href="/post/markdown3.html">
+                            <img src="https://pic2.zhimg.com/v2-cd4d4af7717988bfe4edb0db8666ef9d_250x0.jpg?source=172ae18b" alt="Markdown进阶用法" />
+                        </a>
+                    </div>
+                
+
+                <h3 class="home-article-title">
+                    <a href="/post/markdown3.html">
+                        Markdown进阶用法
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Markdown 高级技巧支持的 HTML 元素不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。
+目前支持的 HTML 元素有：&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; ...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Mar 27 2023 15:47:43 GMT+0800">
+                
+                    2023-03-27
+                
+            </span>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Markdown/">Markdown</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/post/markdown3.html">Read more<span class="seo-reader-text">Markdown进阶用法</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
         
             <li class="home-article-item">
 
@@ -529,51 +761,6 @@ CHAPTER.III 相遇
     </div>
 
     <a href="/post/stories1.html">Read more<span class="seo-reader-text">《绸梦人生》-CHAPTER.I</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    <div class="home-article-thumbnail">
-                        <a href="/post/test1.html">
-                            <img src="https://www.runoob.com/wp-content/uploads/2019/03/iconfinder_markdown_298823.png" alt="Markdown基础语法教程-1" />
-                        </a>
-                    </div>
-                
-
-                <h3 class="home-article-title">
-                    <a href="/post/test1.html">
-                        Markdown基础语法教程-1
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        Markdown 教程
-Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。
-Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。
-Markdown 编写的文档可以导出 HTML 、...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Dec 30 2022 19:07:05 GMT+0800">
-                
-                    2022-12-30
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/post/test1.html">Read more<span class="seo-reader-text">Markdown基础语法教程-1</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
