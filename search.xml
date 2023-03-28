@@ -156,6 +156,15 @@ GOOGLE.COM
       </tags>
   </entry>
   <entry>
+    <title>收藏的一些CSDN前端教学地址-更新中</title>
+    <url>//post/jsd.html</url>
+    <content><![CDATA[<h1 id="Vue学习笔记-本文链接：https-blog-csdn-net-qq-55593227-article-details-119717498"><a href="#Vue学习笔记-本文链接：https-blog-csdn-net-qq-55593227-article-details-119717498" class="headerlink" title="Vue学习笔记:本文链接：https://blog.csdn.net/qq_55593227/article/details/119717498"></a>Vue学习笔记:本文链接：<a class="link"   href="https://blog.csdn.net/qq_55593227/article/details/119717498" >https://blog.csdn.net/qq_55593227/article/details/119717498 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h1><p>​		</p>
+]]></content>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown基础语法教程-2</title>
     <url>//post/markdown2.html</url>
     <content><![CDATA[<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 <strong>&gt;</strong> 符号 ，然后后面紧跟一个<strong>空格</strong>符号：</p>
@@ -514,11 +523,6 @@ Note right of C: 没人陪我玩
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>//post/Vue.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>《绸梦人生》-CHAPTER.II</title>
     <url>//post/stories2.html</url>
     <content><![CDATA[<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>本人的短篇拙作，纯属个人兴趣。</p>
@@ -629,9 +633,169 @@ Note right of C: 没人陪我玩
       </tags>
   </entry>
   <entry>
-    <title>收藏的一些CSDN前端教学地址-更新中</title>
+    <title>Hexo博客技巧：利用JsDeliver加速文件</title>
     <url>//post/vue3.html</url>
-    <content><![CDATA[<h1 id="Vue学习笔记-本文链接：https-blog-csdn-net-qq-55593227-article-details-119717498"><a href="#Vue学习笔记-本文链接：https-blog-csdn-net-qq-55593227-article-details-119717498" class="headerlink" title="Vue学习笔记:本文链接：https://blog.csdn.net/qq_55593227/article/details/119717498"></a>Vue学习笔记:本文链接：<a class="link"   href="https://blog.csdn.net/qq_55593227/article/details/119717498" >https://blog.csdn.net/qq_55593227/article/details/119717498 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h1><p>​		</p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>众所周知，GItHub的服务器是在国外的，曾经还被墙过，那么利用GitHub Pages搭建好的博客后本身就已经够慢了，再加上博客里的图片、css、js等这类文件就更慢了。</p>
+<p>那么可能有人会说，我把图片放图床上，css这类文件少写点不就行了。那你又可曾想过万一图床跑路了，你的博客里全是失效图片了呢。</p>
+<p>下面就讲一种方法，令你的文件访问不仅速度快，还不用担心它失效。</p>
+<h2 id="JsDeliver的优势"><a href="#JsDeliver的优势" class="headerlink" title="JsDeliver的优势"></a>JsDeliver的优势</h2><p>免费<br>稳定<br>速度快<br>你不用担心它会跑路，因为你的文件是存储在GitHub上的。</p>
+<p>且这是免费的，无上限。</p>
+<p>文末会有GitHub与JsDeliver的对比，没有对比就没有伤害，届时你就能看到这两者的速度差别。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>一个Github账号<br>你的图片等文件<br>一个聪明的大脑和勤劳的双手</p>
+<h2 id="具体过程"><a href="#具体过程" class="headerlink" title="具体过程"></a>具体过程</h2><h3 id="1-创建仓库"><a href="#1-创建仓库" class="headerlink" title="1.创建仓库"></a>1.创建仓库</h3><p>进入GitHub且登录后点击右上角加号然后再点击“New repository”</p>
+<p>新建一个仓库，名字随意，当然越简洁越好，这里推荐直截了当用“CDN”作仓库名。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/5c6109dc8fc3b44ed9fa94a50de1723c.png#pic_center" alt="在这里插入图片描述"></p>
+<p>！注意：仓库一定要公开，选择Public！！！</p>
+<p>接下来是两种方法，任选一操作即可：</p>
+<h3 id="2-上传文件"><a href="#2-上传文件" class="headerlink" title="2.上传文件"></a>2.上传文件</h3><h2 id="本地环境（方法一）"><a href="#本地环境（方法一）" class="headerlink" title="本地环境（方法一）"></a>本地环境（方法一）</h2><p>在你的电脑硬盘上新建一个文件夹，然后将刚建好的仓库克隆到本地 (右键Git Bash)：</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;Amnesia-f&#x2F;CDN.git ### 这里是你的CDN仓库地址
+</code></pre>
+
+<p>克隆完成后将需要上传的文件放进文件夹中，执行以下操作：</p>
+<h1 id="添加全部内容文件到暂存区"><a href="#添加全部内容文件到暂存区" class="headerlink" title="添加全部内容文件到暂存区"></a>添加全部内容文件到暂存区</h1><pre class="line-numbers language-none"><code class="language-none"># 添加全部内容文件到暂存区
+git add .
+
+# 添加说明
+git commit -m&#39;第一次提交&#39;
+
+# 提交到远程仓库
+git push
+</code></pre>
+
+<p>第一步add后面有个点，复制的时候不要漏了。</p>
+<p>操作完成后你就可以直接跳到第四步了，第三步虽方式和第二步不一样，但结果是一样的。</p>
+<h2 id="直接上传（方法二）"><a href="#直接上传（方法二）" class="headerlink" title="直接上传（方法二）"></a>直接上传（方法二）</h2><p>新建完仓库后，选择你需要的文件上传到库中即可。</p>
+<p>（就是这么简单粗暴）</p>
+<h2 id="3-调用文件"><a href="#3-调用文件" class="headerlink" title="3.调用文件"></a>3.调用文件</h2><p>直接访问就可以了：<a class="link"   href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84Github%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84CDN%E4%BB%93%E5%BA%93%E5%90%8D/%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%96%87%E4%BB%B6" >https://cdn.jsdelivr.net/gh/你的Github用户名/你的CDN仓库名/文件文件夹/文件 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>例如：<a class="link"   href="https://cdn.jsdelivr.net/gh/Amnesia-f/CDN@1.0/Test/1.jpg" >https://cdn.jsdelivr.net/gh/Amnesia-f/CDN@1.0/Test/1.jpg <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><p>这是两个链接，存储着一张图片，打开它们就可以看到差距了：（链接来源@Lete乐特）</p>
+<p>GitHub：<a class="link"   href="https://lete114.github.io/CDN/BoBoPic/01.jpg" >https://lete114.github.io/CDN/BoBoPic/01.jpg <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>JsDelivr：<a class="link"   href="https://cdn.jsdelivr.net/gh/lete114/CDN@3.0/BoBoPic/12.jpg" >https://cdn.jsdelivr.net/gh/lete114/CDN@3.0/BoBoPic/12.jpg <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>加载速度是不是后者比Github快？</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p><strong>JSD 的链接是什么</strong><br>JSD 的链接是什么？</p>
+<p>在我上图的链接为 <a class="link"   href="https://cdn.jsdelivr.net/gh/sviptzk/Jsd_test/79601805_p0.png%EF%BC%8C%E4%BD%86%E8%BF%99%E5%B9%B6%E4%B8%8D%E6%84%8F%E5%91%B3%E7%9D%80" >https://cdn.jsdelivr.net/gh/sviptzk/Jsd_test/79601805_p0.png，但这并不意味着 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> JSD 只有这一种引用方式。</p>
+<p>1.直接引用</p>
+<pre><code>   这种方式也就是上边的方式，格式为：https://cdn.jsdelivr.ne		t/gh/&lt;用户名&gt;/&lt;仓库名&gt;/&lt;文		件及路径&gt;
+</code></pre>
+<p>​		例如：<a class="link"   href="https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2/2020/05/28/911db4c3b95ed896" >https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile2/2020/05/28/911db4c3b95ed896 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>		b066b6e9aabae311.png 代表用户名 blogimg 下的 HexoStaticFlle2 仓库中文件夹 &#x2F;2020&#x2F;05&#x2F;28&#x2F; 里的 911db4c3b95ed896b066b6e9aabae311.png 文件。</p>
+<p>2.分支及版本号</p>
+<p>​		分支与版本号加到仓库后变，用 @符链接。格式为：<a class="link"   href="https://cdn.jsdelivr.net/gh/" >https://cdn.jsdelivr.net/gh/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>&lt;用户名&gt;&#x2F;&lt;仓库名&gt;@[分支&#x2F;		版本号]&#x2F;&lt;文件及路径&gt;</p>
+<table>
+<thead>
+<tr>
+<th><strong>分支名</strong></th>
+<th><strong>简述</strong></th>
+<th><strong>特点</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>普通分支</td>
+<td>即 GitHub 的分支，可以创建多个。默认为 master</td>
+<td>按分支引用，如同按分支开发</td>
+</tr>
+<tr>
+<td>latest</td>
+<td>最后一次提交</td>
+<td>代表最后一次的提交，即每上传一个新文件，都可以用这个分支引用到。也就是不加版本号的默认情况。</td>
+</tr>
+<tr>
+<td>版本号</td>
+<td>即指定版本的内容，需配合版本发布</td>
+<td>已发布的版本不会受到仓库内容变化的影响</td>
+</tr>
+</tbody></table>
+<h3 id="关于缓存问题"><a href="#关于缓存问题" class="headerlink" title="关于缓存问题"></a>关于缓存问题</h3><p>这个问题像迷一样，根据我自己的实测不仅与分支有关系而且与文件名有关系。文件名为 <em>.min.</em> 或者是 *.*，也就是带 min 的和不带 min 的。这里我以 index.min.css 和 index.css 为例。</p>
+<p>先来看看 index.css</p>
+<table>
+<thead>
+<tr>
+<th><strong>分支</strong></th>
+<th><strong>首次上传</strong></th>
+<th><strong>能否及时更新</strong></th>
+<th><strong>缓存天数</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>master</td>
+<td>可以被引用</td>
+<td>第一次 push 和第一次修改可以更新</td>
+<td>可能 1 天</td>
+</tr>
+<tr>
+<td>latest</td>
+<td>可以被引用</td>
+<td>与 master 分支几乎一致</td>
+<td>可能 1 天</td>
+</tr>
+<tr>
+<td>版本号</td>
+<td>发布版本后引用</td>
+<td>发布后及时更新</td>
+<td>每个版本独立</td>
+</tr>
+</tbody></table>
+<p>在来看看 index.min.css</p>
+<table>
+<thead>
+<tr>
+<th><strong>分支</strong></th>
+<th><strong>首次上传</strong></th>
+<th><strong>首次上传</strong></th>
+<th><strong>缓存天数</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>master</td>
+<td>可以被引用</td>
+<td>第一次 push 可以更新</td>
+<td>可能 1 天</td>
+</tr>
+<tr>
+<td>latest</td>
+<td>可以被引用</td>
+<td>第一次 push 和第一次修改可以更新</td>
+<td>可能 1 天</td>
+</tr>
+<tr>
+<td>版本号</td>
+<td>发布版本后引用</td>
+<td>发布后及时更新</td>
+<td>每个版本独立</td>
+</tr>
+</tbody></table>
+<p>因此总结下的使用方式就是：</p>
+<ul>
+<li>图床（不需要修改文件）</li>
+</ul>
+<p>​		使用 latest 分支或者 master 分支即可。</p>
+<ul>
+<li>静态文件仓库（经常改动文件）</li>
+</ul>
+<p>​		建议使用版本号方式</p>
+<h2 id="文件是否有限制"><a href="#文件是否有限制" class="headerlink" title="文件是否有限制"></a>文件是否有限制</h2><p>文件是否有限制？</p>
+<p>1.先说说 GitHub 仓库</p>
+<p>GitHub 公开仓库大小为 100GB，是不是听起来很爽。并且可以创建无数个仓库哦！</p>
+<p>但是这 100GB 我们并不能全用完，甚至每个仓库不能超过 1G。为什么？因为可能被封号。官方的解释是尽量不要传大文件，且仓库超过 1G 后会有人工审核仓库内容，如果发现用来做图床～～～😏。轻则删库，重则封号。因此为了安全建议在 1G 之前就换个仓库，反正可以创建无数个仓库嘛。</p>
+<p>2.文件大小</p>
+<p>Github 单文件上传为 100M，但是 JSD 加速的单文件大小为 50M。因此也就意味着单文件大小为 50MB。</p>
+<p>3.文件类型</p>
+<p>基本的图片视频静态文件应该都可以。</p>
+<h2 id="查看仓库文件"><a href="#查看仓库文件" class="headerlink" title="查看仓库文件"></a>查看仓库文件</h2><p>查看仓库文件</p>
+<p>查看仓库文件有大小限制，因此当你的仓库文件大于 50MB 时，就无法通过 JSD 查看了，只能在 GitHub 仓库查看。</p>
+<p>JSD 的查看仓库文件有两种方式：</p>
+<p>查看仓库的版本号</p>
+<p>格式：<a class="link"   href="https://www.jsdelivr.com/package/gh/+" >https://www.jsdelivr.com/package/gh/+ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 用户名 +&#x2F;+ 仓库名</p>
+<p>例如：<a class="link"   href="https://www.jsdelivr.com/package/gh/sviptzk/HexoStaticFile" >https://www.jsdelivr.com/package/gh/sviptzk/HexoStaticFile <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>查看仓库文件</p>
+<p>格式 <a class="link"   href="https://cdn.jsdelivr.net/gh/+" >https://cdn.jsdelivr.net/gh/+ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 用户名 +&#x2F;+ 仓库名 +&#x2F; 仓库名 [@分支]</p>
+<p>例如仓库名@master，默认为 master 分支 <a class="link"   href="https://cdn.jsdelivr.net/gh/sviptzk/sviptzk.github.io@master/" >https://cdn.jsdelivr.net/gh/sviptzk/sviptzk.github.io@master/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>利用 CloudFare<br>这个没有啥难度，因此只提供思路。</p>
+<p>将 GitHub 仓库开启 Pages 服务，并绑定自己的域名</p>
+<p>域名需要在 CloudFare 解析</p>
+<p>接下来就可以用你的域名访问仓库文件了。</p>
+<p>例如：<a class="link"   href="https://cdn.antmoe.com/1.jpg%E3%80%82%E4%BB%A3%E8%A1%A8%E8%AE%BF%E9%97%AE%E4%BB%93%E5%BA%93%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84" >https://cdn.antmoe.com/1.jpg。代表访问仓库根目录下的 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 1.jpg 文件</p>
+<p>上边只是一个示例，不要试图访问哦！</p>
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><p>上传文件后如果不能立即访问到，那么稍等片刻即可。<br>JSD 最近很不稳定，遇到突然不能打开很正常。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>[]: <code>JsDeliver官方网址：https://www.jsdelivr.com/?docs=gh</code></p>
+<p>————————————————<br>原文链接：<a class="link"   href="https://blog.csdn.net/weixin_58068682/article/details/116770400" >https://blog.csdn.net/weixin_58068682/article/details/116770400 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
       <tags>
         <tag>Markdown</tag>
