@@ -1,6 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>//post/Vue.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Markdown基础语法教程-2</title>
+    <url>//post/markdown2.html</url>
+    <content><![CDATA[<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 <strong>&gt;</strong> 符号 ，然后后面紧跟一个<strong>空格</strong>符号：</p>
+<pre class="line-numbers language-none"><code class="language-none">&gt; 区块引用
+&gt; 菜鸟教程
+&gt; 学的不仅是技术更是梦想</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/DFE1124E-BC38-4C12-B7AC-053E560D4C9C.jpg" alt="img"></p>
+<p>另外区块是可以嵌套的，一个 <strong>&gt;</strong> 符号是最外层，两个 <strong>&gt;</strong> 符号是第一层嵌套，以此类推：</p>
+<pre class="line-numbers language-none"><code class="language-none">&gt; 最外层
+&gt; &gt; 第一层嵌套
+&gt; &gt; &gt; 第二层嵌套</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/AA0A4A6A-33A7-48C7-971F-73FFC8FE85B0.jpg" alt="img"></p>
+<h3 id="区块中使用列表"><a href="#区块中使用列表" class="headerlink" title="区块中使用列表"></a>区块中使用列表</h3><p>区块中使用列表实例如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">&gt; 区块中使用列表
+&gt; 1. 第一项
+&gt; 2. 第二项
+&gt; + 第一项
+&gt; + 第二项
+&gt; + 第三项</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/E3BF6399-6483-4C7A-8502-AE75E8D66C96.jpg" alt="img"></p>
+<h3 id="列表中使用区块"><a href="#列表中使用区块" class="headerlink" title="列表中使用区块"></a>列表中使用区块</h3><p>如果要在列表项目内放进区块，那么就需要在 <strong>&gt;</strong> 前添加四个空格的缩进。</p>
+<p>列表中使用区块实例如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">* 第一项
+    &gt; 菜鸟教程
+    &gt; 学的不仅是技术更是梦想
+* 第二项</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/1B894FB4-53AC-4E2D-BA30-F4AE4DFA8B97.jpg" alt="img"></p>
+<h1 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h1><p>如果是段落上的一个函数或片段的代码可以用反引号把它包起来（**&#96;**），例如：</p>
+<pre class="line-numbers language-none"><code class="language-none">&#96;printf()&#96; 函数</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/C928FDA3-E0A7-4AFF-AB2A-B3AF44F93DF9.jpg" alt="img"></p>
+<h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><p>代码区块使用 <strong>4 个空格</strong>或者一个<strong>制表符（Tab 键）</strong>。</p>
+<p>实例如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/55EDFE05-5F27-458E-AFE0-7B96685C9603.jpg" alt="img"></p>
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/6DC89E5C-B41A-4938-97D8-D7D06B879F91.jpg" alt="img"></p>
+<p>你也可以用 <strong>&#96;&#96;&#96;</strong> 包裹一段代码，并指定一种语言（也可以不指定）：</p>
+<pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;javascript
+$(document).ready(function () &#123;
+    alert(&#39;RUNOOB&#39;);
+&#125;);
+&#96;&#96;&#96;</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/88F52386-2F98-4D7E-8935-E43BECA6D868.jpg" alt="img"></p>
+<h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><p>链接使用方法如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">[链接名称](链接地址)
+
+或者
+
+&lt;链接地址&gt;</code></pre>
+
+<p>例如：</p>
+<pre class="line-numbers language-none"><code class="language-none">这是一个链接 [菜鸟教程](https:&#x2F;&#x2F;www.runoob.com)</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/49E6CB42-F780-4DA6-8290-DC757B51FB9A.jpg" alt="img"></p>
+<p>直接使用链接地址：</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;https:&#x2F;&#x2F;www.runoob.com&gt;</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/9BFF60A1-DD71-4B63-987B-4665B31C7787.jpg" alt="img"></p>
+<h3 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h3><p>我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：</p>
+<pre class="line-numbers language-none"><code class="language-none">这个链接用 1 作为网址变量 [Google][1]
+这个链接用 runoob 作为网址变量 [Runoob][runoob]
+然后在文档的结尾为变量赋值（网址）
+
+  [1]: http:&#x2F;&#x2F;www.google.com&#x2F;
+  [runoob]: http:&#x2F;&#x2F;www.runoob.com&#x2F;</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/EC3ED5D2-4F0D-492A-81B3-D485623D1A9E.jpg" alt="img"></p>
+<h1 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h1><p>Markdown 图片语法格式如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">![alt 属性文本](图片地址)
+
+![alt 属性文本](图片地址 &quot;可选标题&quot;)</code></pre>
+
+<ul>
+<li>开头一个感叹号 !</li>
+<li>接着一个方括号，里面放上图片的替代文字</li>
+<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</li>
+</ul>
+<p>使用实例：</p>
+<pre class="line-numbers language-none"><code class="language-none">![RUNOOB 图标](http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png)
+
+![RUNOOB 图标](http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png &quot;RUNOOB&quot;)</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/A042DF30-C232-46F3-8436-7D6C35351BBD.jpg" alt="img"></p>
+<p>当然，你也可以像网址那样对图片网址使用变量:</p>
+<pre class="line-numbers language-none"><code class="language-none">这个链接用 1 作为网址变量 [RUNOOB][1].
+然后在文档的结尾为变量赋值（网址）
+
+[1]: http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/75AA6EBF-CC57-44A6-A585-5EE3DD94E42A.jpg" alt="img"></p>
+<p>Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签。</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;img decoding&#x3D;&quot;async&quot; src&#x3D;&quot;http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png&quot; width&#x3D;&quot;50%&quot;&gt;</code></pre>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/55F2A67D-F4BD-4960-AC55-DC690A415878.jpg" alt="img"></p>
+<h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><p>Markdown 制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。</p>
+<p>语法格式如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |</code></pre>
+
+<p>以上代码显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/23EACC50-38E0-4284-B99A-6BC22E284BAC.jpg" alt="img"></p>
+<p>对齐方式</p>
+<p><strong>我们可以设置表格的对齐方式：</strong></p>
+<ul>
+<li><strong>-:</strong> 设置内容和标题栏居右对齐。</li>
+<li><strong>:-</strong> 设置内容和标题栏居左对齐。</li>
+<li><strong>:-:</strong> 设置内容和标题栏居中对齐。</li>
+</ul>
+<p>实例如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |</code></pre>
+
+<p>以上代码显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/87DE9D5C-44FB-4693-8735-194D3779EC3E.jpg" alt="img"></p>
+<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>参考自自：菜鸟教程-Markdown语法</p>
+</div>
+]]></content>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown基础语法教程-1</title>
     <url>//post/markdown1.html</url>
     <content><![CDATA[<h1 id="Markdown-教程"><a href="#Markdown-教程" class="headerlink" title="Markdown 教程"></a>Markdown 教程</h1><p><img src="https://www.runoob.com/wp-content/uploads/2019/03/iconfinder_markdown_298823.png" alt="img"></p>
@@ -153,203 +301,6 @@ GOOGLE.COM
 </div>]]></content>
       <tags>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown基础语法教程-2</title>
-    <url>//post/markdown2.html</url>
-    <content><![CDATA[<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 <strong>&gt;</strong> 符号 ，然后后面紧跟一个<strong>空格</strong>符号：</p>
-<pre class="line-numbers language-none"><code class="language-none">&gt; 区块引用
-&gt; 菜鸟教程
-&gt; 学的不仅是技术更是梦想</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/DFE1124E-BC38-4C12-B7AC-053E560D4C9C.jpg" alt="img"></p>
-<p>另外区块是可以嵌套的，一个 <strong>&gt;</strong> 符号是最外层，两个 <strong>&gt;</strong> 符号是第一层嵌套，以此类推：</p>
-<pre class="line-numbers language-none"><code class="language-none">&gt; 最外层
-&gt; &gt; 第一层嵌套
-&gt; &gt; &gt; 第二层嵌套</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/AA0A4A6A-33A7-48C7-971F-73FFC8FE85B0.jpg" alt="img"></p>
-<h3 id="区块中使用列表"><a href="#区块中使用列表" class="headerlink" title="区块中使用列表"></a>区块中使用列表</h3><p>区块中使用列表实例如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">&gt; 区块中使用列表
-&gt; 1. 第一项
-&gt; 2. 第二项
-&gt; + 第一项
-&gt; + 第二项
-&gt; + 第三项</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/E3BF6399-6483-4C7A-8502-AE75E8D66C96.jpg" alt="img"></p>
-<h3 id="列表中使用区块"><a href="#列表中使用区块" class="headerlink" title="列表中使用区块"></a>列表中使用区块</h3><p>如果要在列表项目内放进区块，那么就需要在 <strong>&gt;</strong> 前添加四个空格的缩进。</p>
-<p>列表中使用区块实例如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">* 第一项
-    &gt; 菜鸟教程
-    &gt; 学的不仅是技术更是梦想
-* 第二项</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/1B894FB4-53AC-4E2D-BA30-F4AE4DFA8B97.jpg" alt="img"></p>
-<h1 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h1><p>如果是段落上的一个函数或片段的代码可以用反引号把它包起来（**&#96;**），例如：</p>
-<pre class="line-numbers language-none"><code class="language-none">&#96;printf()&#96; 函数</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/C928FDA3-E0A7-4AFF-AB2A-B3AF44F93DF9.jpg" alt="img"></p>
-<h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h3><p>代码区块使用 <strong>4 个空格</strong>或者一个<strong>制表符（Tab 键）</strong>。</p>
-<p>实例如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/55EDFE05-5F27-458E-AFE0-7B96685C9603.jpg" alt="img"></p>
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/6DC89E5C-B41A-4938-97D8-D7D06B879F91.jpg" alt="img"></p>
-<p>你也可以用 <strong>&#96;&#96;&#96;</strong> 包裹一段代码，并指定一种语言（也可以不指定）：</p>
-<pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;javascript
-$(document).ready(function () &#123;
-    alert(&#39;RUNOOB&#39;);
-&#125;);
-&#96;&#96;&#96;</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/88F52386-2F98-4D7E-8935-E43BECA6D868.jpg" alt="img"></p>
-<h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><p>链接使用方法如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">[链接名称](链接地址)
-
-或者
-
-&lt;链接地址&gt;</code></pre>
-
-<p>例如：</p>
-<pre class="line-numbers language-none"><code class="language-none">这是一个链接 [菜鸟教程](https:&#x2F;&#x2F;www.runoob.com)</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/49E6CB42-F780-4DA6-8290-DC757B51FB9A.jpg" alt="img"></p>
-<p>直接使用链接地址：</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;https:&#x2F;&#x2F;www.runoob.com&gt;</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/9BFF60A1-DD71-4B63-987B-4665B31C7787.jpg" alt="img"></p>
-<h3 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h3><p>我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：</p>
-<pre class="line-numbers language-none"><code class="language-none">这个链接用 1 作为网址变量 [Google][1]
-这个链接用 runoob 作为网址变量 [Runoob][runoob]
-然后在文档的结尾为变量赋值（网址）
-
-  [1]: http:&#x2F;&#x2F;www.google.com&#x2F;
-  [runoob]: http:&#x2F;&#x2F;www.runoob.com&#x2F;</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/EC3ED5D2-4F0D-492A-81B3-D485623D1A9E.jpg" alt="img"></p>
-<h1 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h1><p>Markdown 图片语法格式如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">![alt 属性文本](图片地址)
-
-![alt 属性文本](图片地址 &quot;可选标题&quot;)</code></pre>
-
-<ul>
-<li>开头一个感叹号 !</li>
-<li>接着一个方括号，里面放上图片的替代文字</li>
-<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</li>
-</ul>
-<p>使用实例：</p>
-<pre class="line-numbers language-none"><code class="language-none">![RUNOOB 图标](http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png)
-
-![RUNOOB 图标](http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png &quot;RUNOOB&quot;)</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/A042DF30-C232-46F3-8436-7D6C35351BBD.jpg" alt="img"></p>
-<p>当然，你也可以像网址那样对图片网址使用变量:</p>
-<pre class="line-numbers language-none"><code class="language-none">这个链接用 1 作为网址变量 [RUNOOB][1].
-然后在文档的结尾为变量赋值（网址）
-
-[1]: http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/75AA6EBF-CC57-44A6-A585-5EE3DD94E42A.jpg" alt="img"></p>
-<p>Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签。</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;img decoding&#x3D;&quot;async&quot; src&#x3D;&quot;http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png&quot; width&#x3D;&quot;50%&quot;&gt;</code></pre>
-
-<p>显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/55F2A67D-F4BD-4960-AC55-DC690A415878.jpg" alt="img"></p>
-<h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><p>Markdown 制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。</p>
-<p>语法格式如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">|  表头   | 表头  |
-|  ----  | ----  |
-| 单元格  | 单元格 |
-| 单元格  | 单元格 |</code></pre>
-
-<p>以上代码显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/23EACC50-38E0-4284-B99A-6BC22E284BAC.jpg" alt="img"></p>
-<p>对齐方式</p>
-<p><strong>我们可以设置表格的对齐方式：</strong></p>
-<ul>
-<li><strong>-:</strong> 设置内容和标题栏居右对齐。</li>
-<li><strong>:-</strong> 设置内容和标题栏居左对齐。</li>
-<li><strong>:-:</strong> 设置内容和标题栏居中对齐。</li>
-</ul>
-<p>实例如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">| 左对齐 | 右对齐 | 居中对齐 |
-| :-----| ----: | :----: |
-| 单元格 | 单元格 | 单元格 |
-| 单元格 | 单元格 | 单元格 |</code></pre>
-
-<p>以上代码显示结果如下：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/87DE9D5C-44FB-4693-8735-194D3779EC3E.jpg" alt="img"></p>
-<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>参考自自：菜鸟教程-Markdown语法</p>
-</div>
-]]></content>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《绸梦人生》-CHAPTER.III</title>
-    <url>//post/stories3.html</url>
-    <content><![CDATA[<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>本人的短篇拙作，纯属个人兴趣。</p>
-</div>
-<p>CHAPTER.III 相遇</p>
-<p>我离开了那个聚落，朝东走去；经过了三天路程，我的胸口和眼睛放射到头上越来越疼痛，沙暴也吹的我的脸生疼，大气中这种高浓度的沙尘让我的工具越来越不好使，但想通过这种断壁残垣所需要的能源需要我频繁的在大气中收集。</p>
-<p>当我走进那座废弃的研究所试图找到一些可能存在的补给或替换零件，我发现大门的安全锁被人为破坏过，看痕迹的程度应该距今不久。</p>
-<p>这让我感到很不安，但为了躲避愈演愈烈的尘暴我只能“寄人篱下”一段时间。</p>
-<p>我向研究所的底下深处走去，在负2层找到了研究所的补给间。</p>
-<p>“这种天气什么时候是个头啊”我在想。</p>
-<p>“这种天气什么时候是个头啊”我的注意力被这清脆的声音且微弱给吸引了。</p>
-<p>我寻着踪迹找到了声音的所在处，我轻轻推开了门，尽力不发出一点声响去打扰她。</p>
-<p>为什么会有人在这种危险的地方，到处可能都有未被确认的莱腾储存，失去了保险系统以后随时会被引爆。</p>
-<p>但我不想引起陌生人的注意。我从她身后慢慢走过，试图不引起她的注意。</p>
-<p>她嘴里哼的歌倒是让我觉得异常耳熟，我也惊讶她在这种末日下的乐观心态，我原本只是想找到一些修理零件就赶紧离开，但是我仿佛被她的歌声吸引到了。</p>
-<p>我就站在原地看着她，她在伸手够着柜子上的扳手，我有过帮她拿的想法，但是想了想还是算了，保持距离很好。</p>
-<p>也许是我听着忘了时间，也许过了五分钟？…十分钟？</p>
-<p>她突然扭头；这种早已废弃的研究所旧址早就不该有电力，因此光线异常昏暗，我凭借着我的工具勉强能看见不到两米的范围。</p>
-<p>但我俩还是对上了眼神，白色的长发看上去有一阵子没有打理了，这让我想起了之前我遇到的聚落里的人，也许她是从那个聚落里出来的吧？着身的衣服也很破旧，但似乎被画上了奇怪的涂鸦，可能只比我身上的好了一些吧。</p>
-<p>我注意到她的左眼的瞳孔是湛蓝色的… 多像那个人的眼睛..眼里有着我从来没有见过的光芒和活力，我不敢继续直视她，但我也注意到她另一只眼睛的异样。</p>
-<p>她显然被吓了一跳，急忙躲到柜子侧面。</p>
-<p>我略带歉意的轻声说：对不起..我有吓到你吧？请不要害怕我没有恶意。“</p>
-<p>她没有回答我。</p>
-<p>“我只是想来寻找一些修理工具，碰巧看到你在这里，所以请不要害怕。“见半顷仍没有声响，我把照明工具放在桌上，打开了柜门寻找我需要的东西。</p>
-<p>即使是在地下二层，那股浓重的尘土味让我的喉咙干唖的不行，我咳嗽了两声。</p>
-<p>我的胸口突然一阵剧痛，我不得已向柜上一撞。巨大的声响似乎是引起了那位少女的注意。</p>
-<p>随之而来的又是一阵眼球伴左脑的疼痛，我尽力不让自己发出呻吟。但视线越来越模糊..我知道自己在这种地方合上眼睛是什么后果…</p>
-<p>我强撑着试图站起来，但一直找不到着力点。</p>
-<p>但突然我感受到了一股外力。  “平躺，不要乱动”那股声音又从耳边响起，少女手忙脚乱的把我的挎包和机械设备卸下，我想阻止她，我的挎包里有极其重要的东西。但疼痛和模糊的视线已经让我无力反抗了。</p>
-<p>我只见她把一团威番在我面前腾挪，以后的事情我就没有知觉了。</p>
-<p>当我醒来时，我靠在研究所内部休息室的座椅上，身上盖着一层亚棉，但我想到的第一件事就是我的挎包，我强忍着刺痛试图从座椅上座起，白色头发的少女看到我的行为便连忙过来阻止，并屡次指给我我随身物品的存放地点，并告诉我他们很安全。</p>
-<p>她每天都会给我带来营养液，虽然和平常喝到的很不一样，但是能让我活下来，我已经顾不上那么多了。</p>
-<p>这一段时间的相处让我和她成为了很好的朋友，我会每天和她讲述这一路上的故事，她也会和我同样分享，但我总是喜欢看着她讲，每次她讲的时候就会异常开心，眼神中的光芒也在不断跃动，我喜欢这种感觉。</p>
-<p>后来，她会给我带来她画的画。“这是莱腾吗？”我惊讶的问道。但我对这种东西一直以来对待的只有愤怒与恐惧，我第一次见到静态的莱腾在金属画布上的样子。</p>
-<p>“很漂亮，不是吗““我喜欢捕捉他们的样子，但我看不见色彩，我只能做到这样…”</p>
-<p>我想起了。</p>
-<p>“你可以凑近些吗，让我观察一下你的眼睛”她显然有些不情愿，我也可以理解。</p>
-<p>“对不起，我知道…”但我没有说完，她便把头凑近，我愣了片刻，便开始端详她的右眼..</p>
-<p>这种损伤显然有些年日，我想知道这背后的故事，但是她也许并不愿意告诉我，我也没有再追问。</p>
-<p>“你还记得今天是什么日子吗？我问到。</p>
-<p>“我没记错的话..是十二月十日吧。”</p>
-<p>“真快啊。谢谢你一直以来的照顾，作为回报，我会帮助修理你的眼球，我对于修理这些有一定的研究..给我一些时间，利用这里的留下的仪器，我一定可以帮你..”</p>
-<p>“总是听起你讲你遇到的那位旅人，有那么一位对你好的朋友，真羡慕啊，等我可以走了，你可以带我去见见她吗，我想亲口对她说一句谢谢。”</p>
-<p>我确实很羡慕。</p>
-<p>这期间我读了不少她带来的书，我喜欢看到的书中的一句话。</p>
-<p>时间过得很快。</p>
-<p>时间这个盗贼，从不停留。</p>
-<p> 作者：KatrPwt <a class="link"   href="https://www.bilibili.com/read/cv18248664?spm_id_from=333.999.0.0" >https://www.bilibili.com/read/cv18248664?spm_id_from=333.999.0.0 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 出处：bilibili</p>
-]]></content>
-      <tags>
-        <tag>Stories</tag>
       </tags>
   </entry>
   <entry>
@@ -621,6 +572,69 @@ Note right of C: 没人陪我玩
 ]]></content>
       <tags>
         <tag>Stories</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《绸梦人生》-CHAPTER.III</title>
+    <url>//post/stories3.html</url>
+    <content><![CDATA[<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>本人的短篇拙作，纯属个人兴趣。</p>
+</div>
+<p>CHAPTER.III 相遇</p>
+<p>我离开了那个聚落，朝东走去；经过了三天路程，我的胸口和眼睛放射到头上越来越疼痛，沙暴也吹的我的脸生疼，大气中这种高浓度的沙尘让我的工具越来越不好使，但想通过这种断壁残垣所需要的能源需要我频繁的在大气中收集。</p>
+<p>当我走进那座废弃的研究所试图找到一些可能存在的补给或替换零件，我发现大门的安全锁被人为破坏过，看痕迹的程度应该距今不久。</p>
+<p>这让我感到很不安，但为了躲避愈演愈烈的尘暴我只能“寄人篱下”一段时间。</p>
+<p>我向研究所的底下深处走去，在负2层找到了研究所的补给间。</p>
+<p>“这种天气什么时候是个头啊”我在想。</p>
+<p>“这种天气什么时候是个头啊”我的注意力被这清脆的声音且微弱给吸引了。</p>
+<p>我寻着踪迹找到了声音的所在处，我轻轻推开了门，尽力不发出一点声响去打扰她。</p>
+<p>为什么会有人在这种危险的地方，到处可能都有未被确认的莱腾储存，失去了保险系统以后随时会被引爆。</p>
+<p>但我不想引起陌生人的注意。我从她身后慢慢走过，试图不引起她的注意。</p>
+<p>她嘴里哼的歌倒是让我觉得异常耳熟，我也惊讶她在这种末日下的乐观心态，我原本只是想找到一些修理零件就赶紧离开，但是我仿佛被她的歌声吸引到了。</p>
+<p>我就站在原地看着她，她在伸手够着柜子上的扳手，我有过帮她拿的想法，但是想了想还是算了，保持距离很好。</p>
+<p>也许是我听着忘了时间，也许过了五分钟？…十分钟？</p>
+<p>她突然扭头；这种早已废弃的研究所旧址早就不该有电力，因此光线异常昏暗，我凭借着我的工具勉强能看见不到两米的范围。</p>
+<p>但我俩还是对上了眼神，白色的长发看上去有一阵子没有打理了，这让我想起了之前我遇到的聚落里的人，也许她是从那个聚落里出来的吧？着身的衣服也很破旧，但似乎被画上了奇怪的涂鸦，可能只比我身上的好了一些吧。</p>
+<p>我注意到她的左眼的瞳孔是湛蓝色的… 多像那个人的眼睛..眼里有着我从来没有见过的光芒和活力，我不敢继续直视她，但我也注意到她另一只眼睛的异样。</p>
+<p>她显然被吓了一跳，急忙躲到柜子侧面。</p>
+<p>我略带歉意的轻声说：对不起..我有吓到你吧？请不要害怕我没有恶意。“</p>
+<p>她没有回答我。</p>
+<p>“我只是想来寻找一些修理工具，碰巧看到你在这里，所以请不要害怕。“见半顷仍没有声响，我把照明工具放在桌上，打开了柜门寻找我需要的东西。</p>
+<p>即使是在地下二层，那股浓重的尘土味让我的喉咙干唖的不行，我咳嗽了两声。</p>
+<p>我的胸口突然一阵剧痛，我不得已向柜上一撞。巨大的声响似乎是引起了那位少女的注意。</p>
+<p>随之而来的又是一阵眼球伴左脑的疼痛，我尽力不让自己发出呻吟。但视线越来越模糊..我知道自己在这种地方合上眼睛是什么后果…</p>
+<p>我强撑着试图站起来，但一直找不到着力点。</p>
+<p>但突然我感受到了一股外力。  “平躺，不要乱动”那股声音又从耳边响起，少女手忙脚乱的把我的挎包和机械设备卸下，我想阻止她，我的挎包里有极其重要的东西。但疼痛和模糊的视线已经让我无力反抗了。</p>
+<p>我只见她把一团威番在我面前腾挪，以后的事情我就没有知觉了。</p>
+<p>当我醒来时，我靠在研究所内部休息室的座椅上，身上盖着一层亚棉，但我想到的第一件事就是我的挎包，我强忍着刺痛试图从座椅上座起，白色头发的少女看到我的行为便连忙过来阻止，并屡次指给我我随身物品的存放地点，并告诉我他们很安全。</p>
+<p>她每天都会给我带来营养液，虽然和平常喝到的很不一样，但是能让我活下来，我已经顾不上那么多了。</p>
+<p>这一段时间的相处让我和她成为了很好的朋友，我会每天和她讲述这一路上的故事，她也会和我同样分享，但我总是喜欢看着她讲，每次她讲的时候就会异常开心，眼神中的光芒也在不断跃动，我喜欢这种感觉。</p>
+<p>后来，她会给我带来她画的画。“这是莱腾吗？”我惊讶的问道。但我对这种东西一直以来对待的只有愤怒与恐惧，我第一次见到静态的莱腾在金属画布上的样子。</p>
+<p>“很漂亮，不是吗““我喜欢捕捉他们的样子，但我看不见色彩，我只能做到这样…”</p>
+<p>我想起了。</p>
+<p>“你可以凑近些吗，让我观察一下你的眼睛”她显然有些不情愿，我也可以理解。</p>
+<p>“对不起，我知道…”但我没有说完，她便把头凑近，我愣了片刻，便开始端详她的右眼..</p>
+<p>这种损伤显然有些年日，我想知道这背后的故事，但是她也许并不愿意告诉我，我也没有再追问。</p>
+<p>“你还记得今天是什么日子吗？我问到。</p>
+<p>“我没记错的话..是十二月十日吧。”</p>
+<p>“真快啊。谢谢你一直以来的照顾，作为回报，我会帮助修理你的眼球，我对于修理这些有一定的研究..给我一些时间，利用这里的留下的仪器，我一定可以帮你..”</p>
+<p>“总是听起你讲你遇到的那位旅人，有那么一位对你好的朋友，真羡慕啊，等我可以走了，你可以带我去见见她吗，我想亲口对她说一句谢谢。”</p>
+<p>我确实很羡慕。</p>
+<p>这期间我读了不少她带来的书，我喜欢看到的书中的一句话。</p>
+<p>时间过得很快。</p>
+<p>时间这个盗贼，从不停留。</p>
+<p> 作者：KatrPwt <a class="link"   href="https://www.bilibili.com/read/cv18248664?spm_id_from=333.999.0.0" >https://www.bilibili.com/read/cv18248664?spm_id_from=333.999.0.0 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 出处：bilibili</p>
+]]></content>
+      <tags>
+        <tag>Stories</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>收藏的一些CSDN前端教学地址-更新中</title>
+    <url>//post/vue3.html</url>
+    <content><![CDATA[<h1 id="Vue学习笔记（尚硅谷天禹老师）-本文链接：https-blog-csdn-net-qq-55593227-article-details-119717498"><a href="#Vue学习笔记（尚硅谷天禹老师）-本文链接：https-blog-csdn-net-qq-55593227-article-details-119717498" class="headerlink" title="Vue学习笔记（尚硅谷天禹老师）:本文链接：https://blog.csdn.net/qq_55593227/article/details/119717498"></a>Vue学习笔记（尚硅谷天禹老师）:本文链接：<a class="link"   href="https://blog.csdn.net/qq_55593227/article/details/119717498" >https://blog.csdn.net/qq_55593227/article/details/119717498 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></h1><p>​		</p>
+]]></content>
+      <tags>
+        <tag>Markdown</tag>
       </tags>
   </entry>
 </search>

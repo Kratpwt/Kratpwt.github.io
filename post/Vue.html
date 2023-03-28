@@ -14,18 +14,18 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/post/markdown3.html"/>
+    <link rel="canonical" href="http://example.com/post/vue.html"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Markdown进阶用法">
+    <meta property="og:title" content="Hexo">
     <meta property="og:description" content="Hexo Theme Redefine">
-    <meta property="og:url" content="http://example.com/post/markdown3.html">
+    <meta property="og:url" content="http://example.com/post/Vue.html">
     
     <meta property="og:site_name" content="Kratpwt`s Paradise">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Markdown进阶用法">
+    <meta name="twitter:title" content="Hexo">
     <meta name="twitter:description" content="Hexo Theme Redefine">
     <meta name="twitter:image" content="/images/redefine-logo.svg">
     <!--- Icon Part-->
@@ -35,8 +35,6 @@
     <link rel="shortcut icon" href="/images/redefine-logo.svg">
     
     <title>
-        
-            Markdown进阶用法 -
         
         Kratpwt`s Paradise
     </title>
@@ -360,10 +358,9 @@
         <div class="article-content-container">
 
             
-             
-                <div class="article-title">         
-                    <img src="https://pic2.zhimg.com/v2-cd4d4af7717988bfe4edb0db8666ef9d_250x0.jpg?source=172ae18b" alt="Markdown进阶用法" />
-                    <h1 class="article-title-cover">Markdown进阶用法</h1>
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular"></h1>
                 </div>
             
                 
@@ -385,42 +382,27 @@
                             <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="pc">2023-03-27 15:47:43</span>
-        <span class="mobile">2023-03-27 15:47</span>
+        <span class="pc">2023-03-28 12:31:19</span>
+        <span class="mobile">2023-03-28 12:31</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-27 17:22:54</span>
-            <span class="mobile">2023-03-27 17:22</span>
+            <span class="pc">2023-03-28 12:31:19</span>
+            <span class="mobile">2023-03-28 12:31</span>
             <span class="hover-info">Updated</span>
         </span>
     
 
     
     
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/tags/Markdown/">Markdown</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
-    
 
     
     
-        <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-file-word"></i>&nbsp;<span>1.2k Words</span>
-        </span>
-    
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>5 Mins</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 Mins</span>
         </span>
     
     
@@ -436,193 +418,11 @@
             
 
             <div class="article-content markdown-body">
-                <h1 id="Markdown-高级技巧"><a href="#Markdown-高级技巧" class="headerlink" title="Markdown 高级技巧"></a>Markdown 高级技巧</h1><h3 id="支持的-HTML-元素"><a href="#支持的-HTML-元素" class="headerlink" title="支持的 HTML 元素"></a>支持的 HTML 元素</h3><p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</p>
-<p>目前支持的 HTML 元素有：<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code>等 ，如：</p>
-<pre class="line-numbers language-none"><code class="language-none">使用 &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Alt&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Del&lt;&#x2F;kbd&gt; 重启电脑</code></pre>
-
-<p>输出结果为：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/81999271-F914-428D-B7BF-164BDC67CAAC.jpg" alt="img"></p>
-<h3 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h3><p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</p>
-<pre class="line-numbers language-none"><code class="language-none">**文本加粗** 
-\*\* 正常显示星号 \*\*</code></pre>
-
-<p>输出结果为：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/CA0E0162-0C48-41CD-B57A-CB32A4287C02.jpg" alt="img"></p>
-<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
-<pre class="line-numbers language-none"><code class="language-none">\   反斜线
-&#96;   反引号
-*   星号
-_   下划线
-&#123;&#125;  花括号
-[]  方括号
-()  小括号
-#   井字号
-+   加号
--   减号
-.   英文句点
-!   感叹号</code></pre>
-
-<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p><strong>Markdown Preview Enhanced</strong> 使用 <a class="link"   target="_blank" rel="noopener" href="https://github.com/Khan/KaTeX" >KaTeX <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 或者 <a class="link"   target="_blank" rel="noopener" href="https://github.com/mathjax/MathJax" >MathJax <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 来渲染数学表达式。</p>
-<p>KaTeX 拥有比 MathJax 更快的性能，但是它却少了很多 MathJax 拥有的特性。你可以查看 KaTeX supported functions&#x2F;symbols 来了解 KaTeX 支持那些符号和函数。</p>
-<p>默认下的分隔符：</p>
-<ul>
-<li><code>$...$</code> 或者 <code>\(...\)</code> 中的数学表达式将会在行内显示。</li>
-<li><code>$$...$$</code> 或者 <code>\[...\]</code> 或者 &#96;&#96;&#96;&#96;math&#96; 中的数学表达式将会在块内显示。</li>
-</ul>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/0e408954-fda8-11e5-9eb4-562d7c0ca431.gif" alt="img"></p>
-<pre class="line-numbers language-none"><code class="language-none">$$
-\begin&#123;Bmatrix&#125;
-   a &amp; b \\
-   c &amp; d
-\end&#123;Bmatrix&#125;
-$$
-$$
-\begin&#123;CD&#125;
-   A @&gt;a&gt;&gt; B \\
-@VbVV @AAcA \\
-   C @&#x3D; D
-\end&#123;CD&#125;
-$$</code></pre>
-
-<p>输出结果为：</p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/A9031CEB-04DB-4822-9C98-2E99489D3662.jpeg" alt="img"></p>
-<p> <a class="link"   target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-table.html" >Markdown 表格 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h2 id="1-篇笔记-写笔记"><a href="#1-篇笔记-写笔记" class="headerlink" title="1 篇笔记 写笔记"></a>1 篇笔记 写笔记</h2><p>1. </p>
-<pre><code> adc
-
-928***528@qq.com
-
-[ 参考地址](https://jingyan.baidu.com/article/48b558e3035d9a7f38c09aeb.html)
-</code></pre>
-<p>   1190</p>
-<h3 id="typora-画流程图、时序图-顺序图-、甘特图"><a href="#typora-画流程图、时序图-顺序图-、甘特图" class="headerlink" title="typora 画流程图、时序图(顺序图)、甘特图"></a>typora 画流程图、时序图(顺序图)、甘特图</h3><p>   复制以下代码使用 typora 的源码模式粘贴到编辑器中查看效果：</p>
-<p>   <img src="https://www.runoob.com/wp-content/uploads/2019/03/22A9BC11-BA3E-40D8-90B0-DC4FD29F9C02.jpg" alt="img"></p>
-<p>   以下几个实例效果图如下：</p>
-<p>   <strong>1、横向流程图源码格式：</strong></p>
-   <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;mermaid
-graph LR
-A[方形] --&gt;B(圆角)
-    B --&gt; C&#123;条件a&#125;
-    C --&gt;|a&#x3D;1| D[结果1]
-    C --&gt;|a&#x3D;2| E[结果2]
-    F[横向流程图]
-&#96;&#96;&#96;</code></pre>
-
-<p>   <strong>2、竖向流程图源码格式：</strong></p>
-   <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;mermaid
-graph TD
-A[方形] --&gt; B(圆角)
-    B --&gt; C&#123;条件a&#125;
-    C --&gt; |a&#x3D;1| D[结果1]
-    C --&gt; |a&#x3D;2| E[结果2]
-    F[竖向流程图]
-&#96;&#96;&#96;</code></pre>
-
-<p>   <strong>3、标准流程图源码格式：</strong></p>
-   <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;flow
-st&#x3D;&gt;start: 开始框
-op&#x3D;&gt;operation: 处理框
-cond&#x3D;&gt;condition: 判断框(是或否?)
-sub1&#x3D;&gt;subroutine: 子流程
-io&#x3D;&gt;inputoutput: 输入输出框
-e&#x3D;&gt;end: 结束框
-st-&gt;op-&gt;cond
-cond(yes)-&gt;io-&gt;e
-cond(no)-&gt;sub1(right)-&gt;op
-&#96;&#96;&#96;</code></pre>
-
-<p>   <strong>4、标准流程图源码格式（横向）：</strong></p>
-   <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;flow
-st&#x3D;&gt;start: 开始框
-op&#x3D;&gt;operation: 处理框
-cond&#x3D;&gt;condition: 判断框(是或否?)
-sub1&#x3D;&gt;subroutine: 子流程
-io&#x3D;&gt;inputoutput: 输入输出框
-e&#x3D;&gt;end: 结束框
-st(right)-&gt;op(right)-&gt;cond
-cond(yes)-&gt;io(bottom)-&gt;e
-cond(no)-&gt;sub1(right)-&gt;op
-&#96;&#96;&#96;</code></pre>
-
-<p>   <strong>5、UML时序图源码样例：</strong></p>
-   <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;sequence
-对象A-&gt;对象B: 对象B你好吗?（请求）
-Note right of 对象B: 对象B的描述
-Note left of 对象A: 对象A的描述(提示)
-对象B--&gt;对象A: 我很好(响应)
-对象A-&gt;对象B: 你真的好吗？
-&#96;&#96;&#96;</code></pre>
-
-<p>   <strong>6、UML时序图源码复杂样例：</strong></p>
-   <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;sequence
-Title: 标题：复杂使用
-对象A-&gt;对象B: 对象B你好吗?（请求）
-Note right of 对象B: 对象B的描述
-Note left of 对象A: 对象A的描述(提示)
-对象B--&gt;对象A: 我很好(响应)
-对象B-&gt;小三: 你好吗
-小三--&gt;&gt;对象A: 对象B找我了
-对象A-&gt;对象B: 你真的好吗？
-Note over 小三,对象B: 我们是朋友
-participant C
-Note right of C: 没人陪我玩
-&#96;&#96;&#96;</code></pre>
-
-<p>   <strong>7、UML标准时序图样例：</strong></p>
-   <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;mermaid
-%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头
-  sequenceDiagram
-    participant 张三
-    participant 李四
-    张三-&gt;王五: 王五你好吗？
-    loop 健康检查
-        王五-&gt;王五: 与疾病战斗
-    end
-    Note right of 王五: 合理 食物 &lt;br&#x2F;&gt;看医生...
-    李四--&gt;&gt;张三: 很好!
-    王五-&gt;李四: 你怎么样?
-    李四--&gt;王五: 很好!
-&#96;&#96;&#96;</code></pre>
-
-<p>   <strong>8、甘特图样例：</strong></p>
-   <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;mermaid
-%% 语法示例
-        gantt
-        dateFormat  YYYY-MM-DD
-        title 软件开发甘特图
-        section 设计
-        需求                      :done,    des1, 2014-01-06,2014-01-08
-        原型                      :active,  des2, 2014-01-09, 3d
-        UI设计                     :         des3, after des2, 5d
-    未来任务                     :         des4, after des3, 5d
-        section 开发
-        学习准备理解需求                      :crit, done, 2014-01-06,24h
-        设计框架                             :crit, done, after des2, 2d
-        开发                                 :crit, active, 3d
-        未来任务                              :crit, 5d
-        耍                                   :2d
-        section 测试
-        功能测试                              :active, a1, after des3, 3d
-        压力测试                               :after a1  , 20h
-        测试报告                               : 48h
-&#96;&#96;&#96;</code></pre>
-
-<p>   效果图如下：</p>
-<p>   <img src="https://www.runoob.com/wp-content/uploads/2019/03/md-flow.png" alt="img"></p>
-<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>参考自自：菜鸟教程-Markdown语法</p>
-</div>
+                
             </div>
 
             
 
-            
-                <ul class="post-tags-box">
-                    
-                        <li class="tag-item">
-                            <a href="/tags/Markdown/">#Markdown</a>&nbsp;
-                        </li>
-                    
-                </ul>
             
 
             
@@ -633,13 +433,13 @@ Note right of C: 没人陪我玩
                         <div class="article-prev">
                             <a class="prev"
                             rel="prev"
-                            href="/post/Vue.html"
+                            href="/post/vue3.html"
                             >
                                 <span class="left arrow-icon flex-center">
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </span>
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item"></span>
+                                    <span class="post-nav-title-item">收藏的一些CSDN前端教学地址-更新中</span>
                                     <span class="post-nav-item">Prev posts</span>
                                 </span>
                             </a>
@@ -649,10 +449,10 @@ Note right of C: 没人陪我玩
                         <div class="article-next">
                             <a class="next"
                             rel="next"
-                            href="/post/markdown2.html"
+                            href="/post/markdown3.html"
                             >
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item">Markdown基础语法教程-2</span>
+                                    <span class="post-nav-title-item">Markdown进阶用法</span>
                                     <span class="post-nav-item">Next posts</span>
                                 </span>
                                 <span class="right arrow-icon flex-center">
@@ -717,8 +517,8 @@ Note right of C: 没人陪我玩
                 <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">Markdown进阶用法</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown-%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7"><span class="nav-number">1.</span> <span class="nav-text">Markdown 高级技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%AF%E6%8C%81%E7%9A%84-HTML-%E5%85%83%E7%B4%A0"><span class="nav-number">1.0.1.</span> <span class="nav-text">支持的 HTML 元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AC%E4%B9%89"><span class="nav-number">1.0.2.</span> <span class="nav-text">转义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E5%BC%8F"><span class="nav-number">1.0.3.</span> <span class="nav-text">公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%AF%87%E7%AC%94%E8%AE%B0-%E5%86%99%E7%AC%94%E8%AE%B0"><span class="nav-number">1.1.</span> <span class="nav-text">1 篇笔记 写笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#typora-%E7%94%BB%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%81%E6%97%B6%E5%BA%8F%E5%9B%BE-%E9%A1%BA%E5%BA%8F%E5%9B%BE-%E3%80%81%E7%94%98%E7%89%B9%E5%9B%BE"><span class="nav-number">1.1.1.</span> <span class="nav-text">typora 画流程图、时序图(顺序图)、甘特图</span></a></li></ol></li></ol></li></ol>
+        <div class="page-title"></div>
+        
 
     </div>
 </div>
