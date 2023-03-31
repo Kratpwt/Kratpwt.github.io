@@ -457,6 +457,21 @@
             
                 <div class="article-nav">
                     
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/post/chatgpt.html"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">Chatgpt_academic——基于学术研究的Chatgpt模型</span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
                     
                         <div class="article-next">
                             <a class="next"
@@ -496,7 +511,7 @@
         function loadWaline() {
             init({
                 el: '#waline',
-                serverURL: 'waline-test-omega-two.vercel.app',
+                serverURL: 'https://waline-test-omega-two.vercel.app/',
                 lang: 'zh-CN',
                 dark: 'body[class~="dark-mode"]',
                 requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
